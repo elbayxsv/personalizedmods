@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+:root {
+    --main-orange: #5865f2;
+    --main-orange-bright: #5865f2;
+}
+
+body {
+    user-select: none;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    display: block;
+    background-color: rgb(12, 12, 18);
+    color: #fff;
+    font-size: 0.8vmax;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.left-img {
+    position: absolute;
+    width: 41vw;
+    top: 0;
+}
+
+.header-bar {
+    position: relative;
+    float: right;
+    top: 5vh;
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 5vh;
+}
+
+.header {
+    position: absolute;
+    right: 10%;
+    width: 50vw;
+}
+
+.header-logo {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo img {
+    width: auto;
+    height: 100%;
+}
+
+.header-desc {
+    position: relative;
+    font-size: 2.8vmax;
+    width: 80%;
+    left: 10%;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.header-desc2 {
+    font-size: 0.9vmax;;
+    text-align: center;
+    margin-bottom: 6vh;
+    font-family: 'Work Sans', sans-serif;
+}
+ 
+.header-login-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-login {
+    text-align: center;
+    padding: 2vh 2vw;
+    border: 2px solid var(--main-orange);
+    box-shadow: #5865f2;
+    background-color: #5865f2;
+    font-size: 1.8vmax;
+    transition: all ease .1s;
+}
+
+.header-login:hover {
+    background-color: var(--main-orange-bright);
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header-button {
+    padding: 1.2vh 1.2vw;
+    margin: 1.5% 1.5%;
+    border-radius: 1px;
+    background-color: rgba( 255, 250, 255, 0.1);
+    text-align: center;
+    font-size: 1vmax;
+    transition: all ease .1s;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: var(--main-orange-bright);
+}
+
+.header-videos {
+    width: 70%;
+    padding: 0 15%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-videos-title {
+    text-align: center;
+    margin: 2vh 0vh;
+    font-size: 2.2vmax;
+    color: var(--main-orange);
+}
+
+.header-video:first-child .header-video-image {
+    border: 2px solid var(--main-orange-bright);
+    box-shadow: 0px 0px 5px 4px rgba(220, 80, 50, 0.3);
+}
+
+.header-video {
+    position: relative;
+    width: 31%;
+    margin: 1.5% 1% 1.5% 1%;
+}
+
+.header-video-label {
+    margin-bottom: 3vh;
+    font-size: 0.9vmax;
+}
+
+
+
+
+.header-video-image {
+    width: 100%;
+    height: auto;
+    border-radius: 44px;
+}
+
+.header-video-play {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 4vmax;
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+    line-height: 13rem;
+    pointer-events: none;
+    transition: all ease .3s;
+}
+
+.header-video:hover .header-video-play {
+    color: var(--main-orange);
+}
+
+.header-subtitle {
+    font-size: 1.1vmax;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.header-subtitle-link {
+    color: var(--main-orange-bright);
+    text-decoration: underline;
+}
+
+.header-faq {
+    width: 70%;
+    padding: 2vh 15%;
+    margin-top: 10vh;
+    height: auto;
+    background-color: rgb(20, 20, 30);
+}
+
+.header-faq-line {
+    color: rgba(40, 40, 40, 0.7);
+    margin: 6vh 0 3vh 0;
+}
+
+.header-faq-title {
+    text-align: center;
+    margin: 3vh 0vh;
+    color: var(--main-orange);
+}
+
+#trusted {
+    font-size: 2.5vmax;
+}
+#faq {
+    font-size: 2vmax;
+}
+
+.customer-comments-container {
+    width: 100%;
+}
+
+.customer-comments {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+
+
+.customer-comment {
+    width: 25%;
+    margin-top: 5vh;
+}
+
+.customer-comment-logo {
+    text-align: center;
+    color: var(--main-orange);
+    font-size: 2vmax;
+    margin-bottom: 3vh;
+}
+
+.customer-comment-text {
+    word-wrap: break-word;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 5vh;
+}
+
+.customer-comment-author {
+    text-align: center;
+}
+
+.footer {
+    position: static;
+    height: 21vh;
+    bottom: 0;
+    background-color: rgb(24, 25, 35)
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 40% 0% 40%;
+}
+
+.footer-logo {
+    font-size: 2.4vmax;
+}
+
+.footer-text {
+    font-family: 'Work Sans', sans-serif;
+    padding: 2% 10% 0 10%;
+    width: 80%;
+    text-align: center;
+    font-weight: 500;
+}
+
+#footer-discord {
+    color: #5c6bc0
+}
+#footer-youtube {
+    color: #db2724
+}
+#footer-github {
+    color: rgb(230, 230, 230)
+}
+.orange {
+    color: var(--main-orange);
+}
+
+.elbayxsv {
+    text-decoration: underline;
+    color: #5865f2;
+    font-style: oblique;
+}
+
+/* accordion  */
+.accordion-container {
+    height: auto;
+}
+
+.accordion-item {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid rgba(40, 40, 40, 0.7);
+    border-radius: 5px;
+    margin: 0.5vh 0;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion-line {
+    width: 100%;
+    color: rgba(40, 40, 40, 0.7);
+}
+
+.accordion {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Work Sans';
+    font-weight: bold;
+    text-align: left;
+    padding: 1.5vh 1vw;
+    line-height: 2.4vh;
+    outline: none;
+    font-size: 1.0vmax;
+    border: none;
+}
+
+.accordion:after {
+    content: '\002B';
+    float: right;
+    margin-right: 1vw;
+    font-size: 1vmax;
+    transition: all ease 0.4s;
+}
+
+.active:after {
+    transform: rotate(-225deg);
+}
+
+.panel {
+    padding: 0 1vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--main-orange);
+    max-height: 0;
+    font-family: 'Work Sans';
+    font-weight: bold;
+    font-size: 0.9vmax;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1100px) {
+    .left-img {
+        display: none;
+    }
+
+    .header {
+        width: 90%;
+        right: 5%;
+    }
+
+    .header-button {
+        padding: 2vh 2vw;
+        font-size: 1.6vmax;
+    }
+
+    .header-desc {
+        font-size: 3vmax;
+    }
+
+    .header-desc2 {
+        font-size: 1.2vmax;
+    }
+
+    .header-login {
+        padding: 2vh 3vw;
+        font-size: 2vmax;
+        width: 80%;
+    }
+
+    .header-bar {
+        float: none;
+        height: 75vh;
+    }
+
+    .header-videos {
+        width: 90%;
+        padding: 0 5%;
+    }
+    
+    .header-video {
+        width: 46%;
+        margin: 2% 2% 2% 2%;
+    }
+    
+    .header-video-label {
+        margin-bottom: 1.5vh;
+        font-size: 1.5vmax;
+    }
+
+    .header-videos-title {
+        font-size: 4vmax;
+        margin: 5vh 0;
+    }
+
+    .header-video-play {
+        font-size: 5vmax;
+        line-height: 6.8rem;
+    }
+
+    .header-subtitle {
+        font-size: 2.2vmax;
+    }
+
+    .header-faq {
+        width: 90%;
+        padding: 2vh 5%;
+        margin-top: 6vh;
+    }
+
+    .customer-comment {
+        width: 80%;
+        font-size: 1.5vmax;
+    }
+
+    .customer-comment-text {
+        margin-bottom: 4vh;
+    }
+
+    .customer-comment-logo {
+        font-size: 2.5vmax;
+        margin-bottom: 2vh;
+    }
+
+    .customer-comment-author {
+        font-size: 1.9vmax;
+    }
+
+    #faq {
+        font-size: 3vmax;
+    }
+
+    .accordion {
+        font-size: 1.5vmax;
+    }
+    
+    .accordion:after {
+        font-size: 1.8vmax;
+    }
+
+    .panel {
+        font-size: 1.3vmax;
+    }
+
+    .footer {
+        height: 21vh;
+    }
+    
+    .footer-logos {
+        display: flex;
+        justify-content: space-between;
+        padding: 8% 30% 2% 30%;
+    }
+
+    .footer-logo {
+        font-size: 5vmax;
+    }
+
+    .footer-text {
+        font-size: 1.4vmax;
+    }
+}
